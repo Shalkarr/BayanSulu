@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BS-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image" href="https://linguacontact.com/wp-content/uploads/flag-kazahstan.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ebc661ec-8c99-42f0-89a9-141468e694df&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [53.23743391817985, 63.646109148173934],
+                zoom: 16
+            });
+            myMap.geoObjects 
+        .add(new ymaps.Placemark([53.23743391817985, 63.646109148173934], { 
+            iconCaption: 'BAYAN SULU Company' 
+        }, { 
+            preset: 'islands#redDotIconWithCaption' 
+        })); 
+ 
+        }
+    </script>
+    <title>BS | Bayan Sulu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="images\bayan_sulu.png" alt="logoBayanSulu" style="width: 180px; height:70px;">
+        <nav>
+            <ul>
+                <li><a href="BS-html.html">General<span></span><span></span><span></span><span></span></a></li>
+                <li><a href="BS-about-html.html" target="_blank">About us<span></span><span></span><span></span><span></span></a></li>
+                <li><a href="Ambasador.html" target="_blank">Ambassador<span></span><span></span><span></span><span></span></a></li>
+                <li><a href="#partners">Partners<span></span><span></span><span></span><span></span></a></li>
+                <li><a href="#why">Advantages<span></span><span></span><span></span><span></span></a></li>
+                <li><a href="#map">Address<span></span><span></span><span></span><span></span></a></li>
+                <li><a href="#inputs">Contacts<span></span><span></span><span></span><span></span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="video">
+            <video width="100%" height="391px" autoplay muted>
+                <source src="bsvideo.mp4" type="video/mp4">
+                <source src="bsvideo.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+        <div id="text">
+            <p>The natural composition and high-quality ingredients make our products safe and useful for the whole family.</p>
+        </div>
+        <hr>
+        <div class="products">
+            <center>
+            <h1>Our products</h1>
+            <div class="contents">
+                <div class="con1">
+                <div class="content1">
+                    <img src="images\chokolad.png" alt="Chokolad" style="width:100%">
+                    <button class="btn1" onclick="choko()">Chocolate</button>
+                    <p id="demo"></p>
+                </div>
+                <div class="content2">
+                    <img src="images\kofet.png" alt="Sweets" style="width:100%">
+                    <button class="btn2" onclick="candi()">Candies</button>
+                    <p id="qemo"></p>
+                </div>
+                <div class="content3">
+                    <img src="images\pechene.png" alt="Cookie" style="width:100%">
+                    <button class="btn3" onclick="cookie()">Cookies</button>
+                    <p id="wemo"></p>
+                </div>
+                </div>
+                <div class="con2">
+                <div class="content4">
+                    <img src="images\nabor.png" alt="Nabor" style="width:100%">
+                    <button class="btn4" onclick="nabor()">Sets</button>
+                    <p id="remo"></p>
+                </div>
+                <div class="content5">
+                    <img src="images\podarki.png" alt="Present" style="width:100%">
+                    <button class="btn5" onclick="present()">Presents</button>
+                    <p id="temo"></p>
+                </div>
+                <div class="content6">
+                    <img src="images\fafli.png" alt="Cookie" style="width:100%">
+                    <button class="btn6" onclick="fafli()">Waffles</button>
+                    <p id="pemo"></p>
+                </div>
+                </div>
+                <div class="con3">
+                <div class="content7">
+                    <img src="images\marmelad.png" alt="Marmelad" style="width:100%">
+                    <button class="btn7" onclick="marm()">Marmalade</button>
+                    <p id="semo"></p>
+                </div>
+                <div class="content8">
+                    <img src="images\zefir.png" alt="zefir" style="width:100%">
+                    <button class="btn8" onclick="zefir()">Marshmallows</button>
+                    <p id="femo"></p>
+                </div>
+                <div class="content9">
+                    <img src="images\iris.png" alt="iris" style="width:100%">
+                    <button class="btn9" onclick="iris()">Toffee</button>
+                    <p id="gemo"></p>
+                </div>
+                </div>
+            </div>
+        </center>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <center>
+        <div class="about">
+            <h1>About us</h1>
+            <span id="sus">-</span>
+            <p id="aboutp"><b>Kostanay confectionery factory of JSC "Bayan Sulu"</b><br>
+                JSC "Bayan Sulu" is one of the largest enterprises of the Republic of Kazakhstan <br> for the production of confectionery products. The factory was founded in December 1974 <br> and has been pleasing its customers with the most delicious and high-quality products <br> for more than forty years. <br>
+                The company is confidently moving forward along with rapidly changing trends. <br> Occupying one of the leading positions in the confectionery market of Kazakhstan, <br> the company does not stop for a minute on the way to perfection. <br> The factory is increasing its capacity, production technologies are being improved. <br> The close-knit team of Bayan Sulu JSC always adequately responds <br> to the demands of the time and strives to be one step  <br> ahead of the competition.</p>
+        </div>
+        </center>
+        <hr>
+        <h1 style="text-align: center;">Partners:</h1> <br>
+        <div class="slideshow-container" id="partners">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images\kazakhstan-flag.jpg" style="width:100%">
+          <div class="text">Kazakhstan</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images\kyrgyzstan-flag.jpg" style="width:100%">
+          <div class="text">Kyrgyzstan</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images\azerbaijan-flag.jpg" style="width:100%">
+          <div class="text">Azerbaijan</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images\россия.jpg" style="width:100%">
+            <div class="text">Russian</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images\EU-flag.jpg" style="width:100%">
+            <div class="text">The European Union</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <hr>
+        <div class="company">
+            <center><h1>Why are we doing our job well?</h1></center>
+            <div class="why" id="why">
+            <div class="words">
+                
+                <h3>Ingredients</h3>
+                <p>In the assortment of the store you will certainly find not only delicious and healthy, but also aesthetically designed treats.</p>
+                <h3>Comfort</h3>
+                <p>Exquisite, beautiful gift sets are suitable for any holiday or special event in your life.</p>
+                <h3>Brand</h3>
+                <p>The company's products are popular throughout Kazakhstan and abroad.</p>
+                
+            </div>
+            <img src="images/bso.jpeg" onmouseover="mOver(this)" onmouseout="mOut(this)" alt="BayanSulu" style="width: 400px; height:300px; float: right; margin: auto;">
+            </div>
+        </div>
+        <div class="inputs" id="inputs">
+            <center>
+            <h1>Contact us for any questions</h1>
+            <p>We are always glad to have collaborations, interesting projects and feedback from our clients</p>
+            <form action="" id="form" method="post">
+                <label for="">Name:</label><br>
+                <label class="error_message" id="name"></label>
+                <input type="text" name="name" placeholder="Shalkar"><br>
+                <label for="">Surname:</label><br>
+                <label class="error_message" id="surname"></label>
+                <input type="text" name="surname" placeholder="Mukazhan"><br>
+                <label for="">Phone Number:</label><br>
+                <label class="error_message" id="number"></label>
+                <input type="number" name="number" placeholder="+7(7__)___ ___"><br>
+                <textarea id="w3review" name="textarea" rows="5" cols="65">Thank you very much!!!</textarea>
+                <button class="btn3" onclick="send()">Send</button>
+            </form>
+            <p>By clicking on the button, you consent to the processing of personal data and agree to the privacy policy</p>
+            </center>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <center>
+        <div class="contact">
+            <a href="https://www.instagram.com/bayansuluofficial/"><i class="fa fa-instagram" style="font-size:48px;color:rgb(0, 0, 0)"></i></a>
+            <a href="https://web.facebook.com/bayansulu1974/?pageid=572121532993801&ftentidentifier=1368005096738770&padding=0&_rdc=1&_rdr"><i class="fa fa-facebook" style="font-size:48px;color:black"></i></a>
+            <a href="https://bayansulu.kz/"><i class="fa fa-telegram" style="font-size:48px;color:black"></i></a>
+            <a href="https://twitter.com/hashtag/баян_сулу"><i class="fa fa-twitter" style="font-size:48px;color:black"></i></a>
+            <a href="https://bayansulu.kz/"><i class="fa fa-linkedin" style="font-size:48px;color:black"></i></a>
+            <a href="https://bayansulu.kz/"><i class="fa fa-envelope" style="font-size:48px;color:black"></i></a>
+        </div>
+        <h2>Follow us on social networks and come to our showroom in Kostanay</h2>
+        <p>KOSTANAY REGION, KOSTANAY, Borodin str., 198.</p>
+        </center>
+        <div id="map" style="width: 100%; height: 400px"></div>
+        <div id="footer">
+        <div class="receptions">
+            <div id="firstR">
+                <h6>Reception</h6>
+                <p id="number">+7-7142-56-29-52</p>
+                <p id="number">+7-7142-56-82-76</p>
+            </div>
+            <div id="secondR">
+                <h6>Sales Department in Kazakhstan:</h6>
+                <p id="number">+7-7142-39-09-11</p>
+                <p id="number">+7-7142-56-62-71</p>
+            </div>
+            <div id="thirdR">
+                <h6>Email:</h6>
+                <p id="number">bayansulu@bayansulu.kz</p>
+            </div>
+        </div>
+        <p id="copy">&copy; 2011-2022, JSC "Bayan Sulu" All rights reserved</p>
+    </div>
+    </footer> 
+    <script src="BS-js.js"></script>
+</body>
+</html>
